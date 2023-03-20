@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
+footer{
+    background-color: #dbdbdb;
+    position: relative;
+    bottom: 0;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-pos{
+    height: 100%;
+    width: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 5px 40px;
+}
+.footer-left{
+    display: flex;
+    gap: 20px;
+    box-sizing: border-box;
+    width: fit-content;
+}
+.footer-left h1{
+    height: 100%;
+    width: 100%;
+    flex: 1;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-family: 'Bebas Neue', cursive;
+}
+.footer-left p{
+    height: 100%;
+    width: 100%;
+    flex: 1;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 2px;
+    font-family: 'Rajdhani', sans-serif;
+}
+.footer-mid{
+    display: flex;
+    height: 100%;
+    width: fit-content;
+
+}
+.footer-mid .social-media{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 50px;
+}
+.footer-mid .social-media a{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    transition: all 100ms ease-out;
+}
+.footer-mid .social-media a:hover{
+    transform: scale(1.5);
+}
+.footer-mid .social-media a img{
+    width: 20px;
+    height: 20px;
+}
+.footer-right{
+    height: 100%;
+    display: flex;
+    width: fit-content;
+    position: relative;
+}
+.footer-right .footer-flecha{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:0px 20px;
+    position: relative;
+}
+.footer-flecha img{
+    transition: all 400ms ease-in;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    position: absolute;
+}
+.footer-flecha:hover{
+    cursor: pointer;
+}
+.footer-flecha:hover img{
+    bottom: -20px;
+    cursor: pointer;
+    transform: translateY(-155px);
+}
+
+@media only screen and (max-width: 800px){
+    footer{
+        display: none;
+    }
+}
