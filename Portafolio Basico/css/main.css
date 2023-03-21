@@ -7,7 +7,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 main{
     position: relative;
-    height: fit-content;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -100,7 +99,7 @@ main{
     font-weight: bold;
     color: #0f915b;
 }
-.info-info .info-description{
+.info-info .info-highription{
     flex: 1;
     box-sizing: border-box;
     padding: 10px 40px 10px 0px;
@@ -172,17 +171,19 @@ main{
 
 @media only screen and (max-width: 800px){
     .slideshow-text h1{
-        font-size: 150px;
+        font-size: 140px;
+        padding: 0 10%;
     }
     .slideshow-text p{
-        font: 40px;
+        font-size: 14px;
+        text-align: center;
     }
     .info-content{
         display: flex;
         flex-direction: column;
     }
     .info-pos{
-        padding: 10px;
+        padding: 5px;
     }
     .info-content{
         padding: 10px;

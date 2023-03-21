@@ -1,116 +1,95 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap');
 footer{
+    height: 100px;
+    width: 100%;
     background-color: #dbdbdb;
     position: relative;
-    bottom: 0;
-    height: 80px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    overflow: hidden;
 }
 .footer-pos{
-    height: 100%;
     width: 100%;
+    height: 100%;
+}
+.footer-content{
     flex: 1;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     box-sizing: border-box;
-    padding: 5px 40px;
+    padding: 20px;
 }
 .footer-left{
-    display: flex;
-    gap: 20px;
-    box-sizing: border-box;
+    height: 100%;
     width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 .footer-left h1{
-    height: 100%;
-    width: 100%;
-    flex: 1;
-    white-space: nowrap;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    font-family: 'Bebas Neue', cursive;
+    margin: 0;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
 }
 .footer-left p{
-    height: 100%;
-    width: 100%;
-    flex: 1;
-    white-space: nowrap;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 12px;
-    font-weight: 600;
-    margin-top: 2px;
-    font-family: 'Rajdhani', sans-serif;
+    margin: 0;
 }
-.footer-mid{
-    display: flex;
-    height: 100%;
-    width: fit-content;
 
-}
-.footer-mid .social-media{
+.footer-middle{
     height: 100%;
-    width: 100%;
+    width:fit-content;
     display: flex;
-    align-items: center;
     justify-content: center;
-    position: relative;
-    gap: 50px;
-}
-.footer-mid .social-media a{
-    height: 100%;
-    width: 100%;
-    display: flex;
     align-items: center;
-    transition: all 100ms ease-out;
+    gap: 40px;
 }
-.footer-mid .social-media a:hover{
-    transform: scale(1.5);
+.footer-middle a{
+    text-decoration: none;
+    color: black;
 }
-.footer-mid .social-media a img{
-    width: 20px;
-    height: 20px;
+.footer-middle a:hover{
+    color: black;
 }
+.footer-middle svg {
+    width: 30px;
+    height: 30px;
+}
+
 .footer-right{
     height: 100%;
-    display: flex;
     width: fit-content;
-    position: relative;
-}
-.footer-right .footer-flecha{
-    height: 100%;
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding:0px 20px;
-    position: relative;
 }
-.footer-flecha img{
-    transition: all 400ms ease-in;
-    height: 30px;
-    width: 30px;
-    display: flex;
-    position: absolute;
-}
-.footer-flecha:hover{
-    cursor: pointer;
-}
-.footer-flecha:hover img{
-    bottom: -20px;
-    cursor: pointer;
-    transform: translateY(-155px);
+.footer-right svg{
+    width: 40px;
+    height: 40px;
 }
 
-@media only screen and (max-width: 800px){
-    footer{
+.footer-right svg:hover{
+    cursor: pointer;
+}
+
+@media only screen and (max-width:800px){
+    .footer-left h1{
+        margin: 0;
+        font-family: 'Rajdhani', sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+    }
+    .footer-left p{
         display: none;
+    }
+    .footer-middle svg {
+        width: 18px;
+        height: 18px;
+    }
+    .footer-right svg{
+        width: 25px;
+        height: 25px;
     }
 }
