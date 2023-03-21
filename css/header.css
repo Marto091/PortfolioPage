@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@500&display=swap');
+header{
+    position: relative;
+    overflow-x: hidden;
+    max-width: 100%;
+    height: 60px;
+    box-sizing: border-box;
+    background:#dbdbdb;
+}
+#header-pos{
+    flex: 1;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+.header-right{
+    display: flex;
+    height: 100%;
+    box-sizing: border-box;
+    padding-left: 1%;
+}
+.header-right h1{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 35px;
+    font-family: 'Golos Text', sans-serif;
+}
+.header-mid{
+    box-sizing: border-box;
+    width: 100%;
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.header-nav{
+    width: fit-content;
+    height: 100%;
+    display: flex;
+}
+
+.header-nav nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+}
+.header-nav nav li{
+    display: flex;
+    height: 100%;
+    align-items:center;
+    width: fit-content;
+    transition:background 200ms ease-in;
+}
+.header-nav nav li:hover{
+    cursor: pointer;
+    background:#737373;
+}
+.header-nav-item{
+    text-decoration: none;
+    color:black;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-weight: bold;
+    box-sizing: border-box;
+    white-space: nowrap;
+}
+.header-nav-item:hover{
+    color:#ebda6e;
+}
+.header-left{
+    position: relative;
+    z-index: 100;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    padding-right: 20px;
+}
+.header-left:hover{
+    cursor: pointer;
+}
+.header-phone{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    width: fit-content;
+    box-sizing: border-box;
+    padding-left: 20px; 
+}
+.header-phone img{
+    display: flex;
+    transition:all 200ms ease-in-out;
+    height: 30px;
+    width: 30px;
+    user-select: none;
+}
+
+#fp{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+@media only screen and (max-width:800px){
+    .header-mid{
+        display: none;
+    }
+    #header-pos{
+        display: flex;
+        justify-content: space-between;
+        padding:10px;
+    }
+}

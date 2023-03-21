@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=400px, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/newsletter.css">
+    <link rel="stylesheet" href="/css/projects.css">
+    <link rel="stylesheet" href="/css/header-side.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="https://kit.fontawesome.com/46fb793cdf.js" crossorigin="anonymous"></script>
+    <title>Marto</title>
+</head>
+<body>
+        <div class="header-side-pos" id="side-header">
+            <div class="header-side-content">
+                <ul class="header-side-list">
+                    <li class="header-side-element"><a href="/index.html">HOME</a></li>
+                    <li class="header-side-element"><a onclick="ProjectClick()">PROYECTOS</a></li>
+                    <li class="header-side-element"><a onclick="aboutusClick()">SOBRE NOSOTROS</a></li>
+                    <li class="header-side-element"><a onclick="contactClick()">CONTACTANOS</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--HEADER-->
+        <header id="header">
+            <div id="header-pos">  
+                <!--TITLE-->
+                <div class="header-right">
+                    <h1>MARTO</h1>
+                </div>
+
+                <!--NAVIGATION BAR-->
+                <div class="header-mid">
+
+                    <!--Clase JS-->
+                    <div class="header-nav">
+                        <nav>
+                            <li><a href="/index.html" class="header-nav-item">HOME</a></li>
+                            <li><a class="header-nav-item" onclick="ProjectClick()">PROYECTOS</a></li>
+                            <li><a class="header-nav-item" onclick="aboutusClick()">SOBRE NOSOTROS</a></li>
+                            <li><a class="header-nav-item" onclick="contactClick()">CONTACTANOS</a></li>
+                        </nav>
+                    </div>
+                </div>
+
+                <!--TELEFONOS-->
+                <div class="header-left">
+                    <div class="header-phone" onclick="menuClick()">
+                        <img src="/src/Hamburger_icon.png" alt="#" >
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!--MAIN CONTENT-->
+        <main>
+            <div class="slideshow-pos">
+                <!--CAROUSEL-->
+                <div class="slideshow-content">
+                    <img src="/src/background.jpeg" alt="">
+                </div>
+                <div class="slideshow-text-pos">
+                    <div class="slideshow-text">
+                        <h1>MARTO</h1>
+                        <p>FRONT-END DEVELOPER / CREADOR DE CONTENIDO</p>
+                    </div>
+                </div>
+            </div>
+        <!--ABOUT ME-->
+            <div class="info-pos" id="about-us">
+
+                <div class="info-content">
+                    <div class="info-info">
+                        <div class="info-title">
+                            SOBRE MI 
+                        </div>
+                        <div class="info-highription">
+                            <p>
+                                Hola! Me llamo Alvarez Martin soy de Argentina y soy un programador proactivo especializado en Front-End
+                                <br/>
+                            </p>
+                        </div>
+                        <div class="info-title">
+                            CONOCIMIENTOS
+                        </div>
+                        <div class="info-highription">
+                            <p>
+                                Tengo conocimientos variados como <span class="code">HTML</span>,<span class="code"> CSS</span>, <span class="code"> JavaScript</span>, <span class="code">REACT</span>.
+                                <br/>
+                                <br/>
+                                Ando constantemente expandiendo mi conocimiento para progresar en mi carrera como Desarrollador Web.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="info-social">
+                        <div class="info-social-img">
+                            <div class="img-shadow">
+                                <img src="/src/React.png" alt="">
+                            </div>
+                            <div class="img-shadow">
+                                <img src="/src/html.png" alt="">
+                            </div>
+                            <div class="img-shadow">
+                                <img src="/src/css.png" alt="">
+                            </div>
+                            <div class="img-shadow">
+                                <img src="/src/js.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-pos">
+                <div class="project-grid" id="project">
+                    <!--ELEMENTO DEL GRID-->
+                    <div class="project-element">
+                        <div class="project-bc-image">
+                            <img src="/src/backgroundproject.png"  class="project-bc-image"alt="">
+                        </div>
+                        <div class="project-content">
+                            <div class="project-title">
+                                PORTAFOLIO
+                            </div>
+                            <div class="project-description">
+                                <p>Este proyecto fue realizado con la intencion de demostrar mis habilidades de manejo con los lenguajes HTML, CSS y JavaScript</p>
+                            </div>
+                            <div class="project-footer">
+                                CREADOR: Martin Alvarez
+                            </div>
+                            <div class="project-button">
+                                <button>VER MAS</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--ELEMENTO DEL GRID 2-->
+                    <div class="project-element">
+                        <div class="project-bc-image">
+                            <img src="/src/backgroundproject1.png" alt="">
+                        </div>
+                        <div class="project-content">
+                            <div class="project-title">
+                                TITULO
+                            </div>
+                            <div class="project-description">
+                                <p>descripcion</p>
+                            </div>
+                            <div class="project-footer">
+                                MARTO
+                            </div>
+                            <div class="project-button">
+                                <button>VER MAS</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!--NEWSLETTER-->
+            <div class="newsletter-pos" id="contact">
+                <img src="/src/newsletter.jpg" alt="">
+                <div class="newsletter">
+                    <div class="newsletter-content">
+                        <div class="newsletter-title">
+                            CONTACTANOS
+                        </div>
+                        <div class="newsletter-description">
+                            <p>Para poder recibir informacion actualizada sobre:
+                                <br/> 
+                                Mis ultimos conocimientos adquiridos, tambien como <span class="newsletter-high">certificados</span>, <span class="newsletter-high">videos nuevos</span>, <span class="newsletter-high">productos</span> y <span class="newsletter-high">reseñas</span>.</p>
+                        </div>
+                        <div class="newsletter-form">
+                            <form action="">
+                                <input type="email" placeholder="Your email address" name="" id="">
+                                <button>SUBSCRIBE</button>
+                            </form>
+                        </div>
+                        <div class="newsletter-adv">
+                            We're committed to your privacy. Marto uses the information you provide to us to contact you about our relevant content, products, and services. You may unsubscribe from these communications at any time.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!--FOOTER-->
+        <footer>
+            <div class="footer-pos">
+                <div class="footer-content">
+                    <div class="footer-left">
+                        <h1>MARTO</h1>
+                        <p>All rights reserved</p>
+                    </div>
+                    <div class="footer-middle">
+                        <a href="https://www.instagram.com/marto091/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@martoo091"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="https://www.youtube.com/channel/UC5MYv0NmCeV3TbLBQNP4F8A"><i class="fa-brands fa-youtube"></i></a>
+                         
+                    </div>
+                    <div class="footer-right">
+                        <i class="fa-solid fa-arrow-up" onclick="arrowClick()"></i>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    <!--BOOTSTRAP Y JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="/js/index.js"></script>
+</body> 
+</html>
